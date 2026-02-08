@@ -44,6 +44,12 @@ Alternatively, you can use the `render.yaml` Blueprint specification.
 > [!NOTE]
 > **Vercel Users**: Vercel is *not* recommended for this specific app because it cannot easily install the `tesseract-ocr` system dependency required for scanned PDFs. Stick to Render or Fly.io.
 
+## Troubleshooting Deployment
+
+**Error: `libGL.so.1: cannot open shared object file`**
+-   **Cause**: This error occurs when the `opencv` library (used by `pdf2docx`) is missing system graphics dependencies.
+-   **Solution**: The provided `Dockerfile` fixes this by installing `libgl1` and usage of `opencv-python-headless`. Ensure you are using the **Docker** runtime on Render.
+
 ## Tech Stack
 
 -   **Backend**: Python, Flask, pdf2docx
