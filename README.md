@@ -57,6 +57,6 @@ Alternatively, you can use the `render.yaml` Blueprint specification.
 
 ## Author
 
-**VIRLIN** - *Full Stack Developer*
+**VIRLIN** - *Vibe Coding Developer*
 -   Designed and developed the complete application.
 -   Implemented robust PDF processing capabilities.
